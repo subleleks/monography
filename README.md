@@ -1,2 +1,4 @@
-monography
-==========
+= Monography
+
+Our great monography.
+
