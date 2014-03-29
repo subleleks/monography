@@ -11,4 +11,9 @@ Noam Chomsky.
 \newblock {\em Syntatic Structures}.
 \newblock MIT Press, Cambridge, MA, 1957.
 
+\bibitem{subleq}
+O.~{Mazonka} and A.~{Kolodin}.
+\newblock {A Simple Multi-Processor Computer Based on Subleq}.
+\newblock {\em ArXiv e-prints}, June 2011.
+
 \end{thebibliography}
