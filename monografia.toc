@@ -3,6 +3,6 @@
 \select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Conceitos B\IeC {\'a}sicos}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Linguagem de Montagem Subleq}{1}{section.1.2}
-\contentsline {chapter}{\numberline {2}Prot\IeC {\'o}tipo do Segundo Cap\IeC {\'\i }tulo}{2}{chapter.2}
-\contentsline {chapter}{Refer\^encias}{3}{section*.8}
+\contentsline {section}{\numberline {1.2}Linguagem de Montagem Subleq}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Prot\IeC {\'o}tipo do Segundo Cap\IeC {\'\i }tulo}{4}{chapter.2}
+\contentsline {chapter}{Refer\^encias}{5}{section*.8}

@@ -1,8 +1,36 @@
 \begin{thebibliography}{1}
 
+\bibitem{minimalist}
+{Laplante} Phillip~A. {Gilreath} William~F.
+\newblock {\em {Computer Architecture: A Minimalist Perspective: Dynamics and
+  Sustainability}}.
+\newblock Springer, 2003.
+
+\bibitem{hennessy}
+{Patterson}~David {Hennessy} John~L.
+\newblock {\em {Computer Architecture: A Quantitative Approach}}.
+\newblock Morgan Kaufman Publishers, 1989.
+
 \bibitem{subleq}
 O.~{Mazonka} and A.~{Kolodin}.
 \newblock {A Simple Multi-Processor Computer Based on Subleq}.
 \newblock {\em ArXiv e-prints}, June 2011.
+
+\bibitem{mostafa}
+Hesham El-Rewini Mostafa Abd-El-Barr.
+\newblock {\em {Fundamentals of Computer Organization and Architecture}}.
+\newblock Wiley, December 2004.
+
+\bibitem{principles}
+{Heuring} Vincent~P. {Murdocca}~Miles.
+\newblock {\em {Principles of Computer Architecture}}.
+\newblock Prentice Hall, 1999.
+
+\bibitem{patterson}
+{Hennessy} John~L. {Patterson}~David.
+\newblock {\em {Computer Organization and Design: the Hardware/Software
+  Interface}}.
+\newblock The Morgan Kaufmann Series in Computer Architecture and Design.
+  Morgan Kaufmann Publishers, 2011.
 
 \end{thebibliography}
