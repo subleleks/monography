@@ -3,7 +3,9 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Os tr\IeC {\^e}s formatos principais da \textit {ISA} \textit {MIPS32}.}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Formato geral de uma instru\IeC {\c c}\IeC {\~a}o da \textit {ISA} \textit {IA-32}.}}{6}{figure.2.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Camadas de abstra\IeC {\c c}\IeC {\~a}o de um computador.}}{8}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Camadas de abstra\IeC {\c c}\IeC {\~a}o de um computador.}}{9}{figure.5.1}
