@@ -19,11 +19,25 @@ CPU
 
 \section{Ligadores}
 
-CPU
+%Após arquivos objeto de um ou vários módulos de compilação serem gerados por um montador, é preciso combiná-los em um único arquivo que pode ser carregado para a memória por um programa carregador do sistema operacional.
+
+
 
 \section{Montadores}
 
-CPU
+Montadores são programas que traduzem um módulo de compilação em linguagem \textit{assembly} para uma versão em linguagem de máquina. O armazenamento desta versão é feito em um arquivo objeto. Como veremos em uma seção adiante, um arquivo objeto é uma versão binária de um módulo de compilação, que geralmente fica a um passo de poder ser carregada para execução.
+
+\subsection{Linguagem de máquina}
+
+Anteriormente vimos que uma linguagem de montagem, ou linguagem \textit{assembly}, é formada por símbolos mnemônicos, ou palavras-chave, que identificam as instruções que um processador é capaz de executar.
+
+A etapa seguinte à compilação é a montagem. Nesta etapa, é necessário traduzir os mnemônicos \textit{assembly} para sequências de \textit{bits}. Um \textit{bit} é um dígito que pode assumir apenas o valor 0 (zero) ou o valor 1 (um). Durante a execução de um programa, estas sequências de \textit{bits} serão diretamente interpretadas por uma \textit{CPU}.
+
+Costuma-se dizer que a etapa de montagem é onde está localizada a interface \textit{software}-\textit{hardware}. Uma \textit{ISA} - \textit{Instruction Set Architecture}, ou Arquitetura de Conjunto de Instruções - é uma especificação das instruções que uma implementação de processador digital deve fornecer. Esta especificação estabelece os formatos que as sequências de \textit{bits} geradas por montadores devem seguir.
+
+\subsection{Algoritmos de montagem}
+
+AE
 
 \section{Compiladores}
 
