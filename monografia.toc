@@ -5,11 +5,11 @@
 \contentsline {chapter}{\numberline {2}Referencial Te\IeC {\'o}rico}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Arquitetura de Processadores}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Controladores de Dispositivos Externos}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Sistemas Operacionais}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Carregadores}{4}{section.2.4}
-\contentsline {section}{\numberline {2.5}Ligadores}{4}{section.2.5}
-\contentsline {section}{\numberline {2.6}Montadores}{4}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Linguagem de m\IeC {\'a}quina}{4}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.3}Sistemas Operacionais}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Carregadores}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Ligadores}{5}{section.2.5}
+\contentsline {section}{\numberline {2.6}Montadores}{5}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Linguagem de m\IeC {\'a}quina}{5}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Algoritmos de montagem}{5}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Compiladores}{5}{section.2.7}
 \contentsline {section}{\numberline {2.8}Criptografia}{5}{section.2.8}
@@ -17,5 +17,5 @@
 \contentsline {chapter}{\numberline {4}Metodologia}{7}{chapter.4}
 \contentsline {chapter}{\numberline {5}Prot\IeC {\'o}tipo do Quinto Cap\IeC {\'\i }tulo}{8}{chapter.5}
 \contentsline {section}{\numberline {5.1}Conceitos B\IeC {\'a}sicos}{8}{section.5.1}
-\contentsline {section}{\numberline {5.2}Linguagem de Montagem Subleq}{10}{section.5.2}
-\contentsline {chapter}{Refer\^encias}{11}{section*.8}
+\contentsline {section}{\numberline {5.2}Linguagem de Montagem Subleq}{9}{section.5.2}
+\contentsline {chapter}{Refer\^encias}{10}{section*.8}
