@@ -1,6 +1,37 @@
 
 \chapter{Referencial Teórico}
 
+% Começando do básico do básico do básico
+
+Computadores são sistemas incrivelmente complexos. Inúmeros componentes com
+papeis específicos necessitam de se intercomunicar para executar a mais simples das
+tarefas. Dessa forma, para compreender seu funcionamento, se faz o uso de
+camadas de abstrações.
+
+% Camadas de abstrações
+Essas camadas exercem funções diferentes e são visíveis de acordo com seu uso
+--- um usuário final não precisa saber programar para usar um processador de
+texto; da mesma forma, um programador não necessita saber da estrutura dos
+circuitos internos. Cada camada possui seu domínio, sendo as mais próximas do
+usuário final denominadas de ``alto-nível'' e as mais próximas dos transistores
+e fios, ``baixo-nível''. Observe a figura \ref{camadas}, especificada de acordo
+com Murdocca \cite{principles}.
+
+% As várias camadas bonitinhas
+\begin{figure}[ptb]
+  \begin{center}
+    \includegraphics[scale=.6]{imagens/1_camadas}
+  \end{center}
+  \caption{Camadas de abstração de um computador.}
+  \label{camadas}
+\end{figure}
+
+Iremos definir conceitos básicos, utilizados ao longo do trabalho. Nossa abordagem
+será \textit{top-down}, significando que os conceitos serão explicados do nível
+mais abstrato até o mais concreto nível de \textit{hardware}.
+
+\section{Arquitetura de Processadores}
+
 \section{Redes de Computadores}
 
 CPU
@@ -9,9 +40,95 @@ CPU
 
 CPU
 
+<<<<<<< HEAD
 \section{Tradutores}
 
-CPU
+% kure
+\section{Compiladores}
+
+% Importância de Compiladores
+No âmbito da computação em geral, compiladores são uma das mais importantes
+aplicações.  É impossível imaginar um sistema computacional sem alguma forma de
+compilação. Compiladores estão presentes em quase todas as camadas de abstração
+de um computador.
+
+% Calma aê, vamos começar lá de cima
+Porém, para compreender o conceito de compilador é necessário estudar sobre
+linguagens de programação e o processo de tradução.
+
+\subsection{Linguagens}
+
+% Linguagem é muito abstrato
+% CITAR COISA ABSTRATA SOBRE LINGUAGENS
+\textit{Linguagem} é um conceito abrangente. Enquanto que diferentes áreas do
+conhecimento definam \textit{linguagem} por formas específicas, para nosso
+trabalho será suficiente uma definição geral.
+
+% OK, lá vai... Linguagem
+Linguagem é um sistema de comunicação - um conjunto de regras e convenções que
+permitem a interação entre dois pares. Dialetos humanos (português, inglês,
+francês...) são exemplos de tais sistemas de comunicação. Cada um destes define
+acordos (gramáticas, sintaxe, morfologia) que permitem a troca de mensagens
+entre pessoas de mesmo grupo.
+
+% Coisas interessantes sobre linguagem
+Dessa forma, pares que queiram interagir entre si necessitarão de trocar
+conhecimento através de mensagens na mesma linguagem. Caso haja comunicação por
+duas linguagens diferentes, ocorrerão erros de compreensão, desentendimentos e
+até completa inabilidade de se comunicar.
+
+\subsection{Linguagens de Programação}
+
+% Linguagem de programação
+Partindo para o domínio computacional, há o conceito de linguagens de
+programação. Estas possuem objetivo de comunicar instruções de seres humanos
+para máquinas. Mais especificamente, possuem o objetivo de determinar o que
+computadores devem fazer - como estes são programados a agir.
+
+% Programação -> Máquina
+Linguagens de programação são destinadas a expressar idéias concebidas por seres
+humanos. Dessa forma, precisam se aproximar da linguagem natural - forma de
+comunicação natural entre seres humanos.  Devido à construção física de
+máquinas, computadores precisam de instruções em formato bastante diferente do
+oferecido pela linguagem natural - quanto mais de linguagens de programação.
+
+\subsection{Linguagem de Máquina}
+
+% Linguagem de máquina
+É nesse conceito que se define a linguagem de máquina, também conhecida como
+código de máquina. São conjuntos de instruções (ou ordens) que determinam como a
+máquina irá se comportar. Controla-se um computador ao agrupar várias dessas
+instruções em ordens específicas.
+
+% Não é linguagem de programação
+Linguagem de máquina se diferencia das linguagens de programação no sentido de
+que não são facilmente compreendidas por seres humanos. Enquanto que linguagens
+de programação se aproximam da linguagem natural, linguagem de máquina é
+definida pela construção física dos componentes de cada máquina.
+
+\subsection{Linguagens de Alto e Baixo nível}
+
+% Linguagens de alto-nível e baixo-nível, exemplos
+
+Com linguagens em pontos tão extremos, como alto e baixo nível, se torna
+impossível a comunicação entre pares que as utilizem. Necessita-se de um meio
+de conversão entre estas.
+
+\subsection{Tradução}
+
+
+% Tradução - duas linguagens
+% CITAR COISA ABSTRATA SOBRE LINGUAGENS
+
+% Exemplos de tradução
+
+\subsection{Compiladores}
+
+% Finalmente, compiladores
+% CITAR CONCEITO DE COMPILADORES
+Compiladores são programas que transformam código-fonte escrito em uma linguagem
+de programação em outra. Eles fazem o processo de tradução, em geral de
+linguagens de alto nível para linguagens de baixo-nível.
 
 \section{Software Básico}
 
@@ -79,7 +196,7 @@ Outra funcionalidade comum, é a utilização de pseudo-instruções. Pseudo-ins
 
 Ainda na primeira passagem, o montador pode avaliar mnemônicos de instruções. Ao avaliar uma instrução, o montador pode gerar um erro caso não identifique o mnemônico da operação como válido. Um mnemônico válido pode ser o de uma instrução concreta, o de uma pseudo-instrução, ou pode ser uma diretiva de pré-processamento.
 
-Com a tabela de símbolos pronta, o montador pode realizar a segunda passagem. Esta é a etapa em que o montador de fato gera código de máquina. 
+Com a tabela de símbolos pronta, o montador pode realizar a segunda passagem. Esta é a etapa em que o montador de fato gera código de máquina.
 
 O montador examina cada instrução à procura de símbolos. Símbolos que não estejam presentes na tabela de símbolos geram erro de montagem. Para instruções com símbolos definidos, o montador gera o código de máquina correspondente, substituindo cada símbolo por seu respectivo endereço.
 
@@ -194,3 +311,4 @@ CPU
 \subsection{Linguagem de Descrição de Hardware}
 
 CPU
+
