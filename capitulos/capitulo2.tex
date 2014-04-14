@@ -19,7 +19,7 @@ Na seção anterior, descrevemos os conceitos básicos necessários para compree
 
 Programas tradutores como os descritos na seção anterior são classificados como \textit{software} básico, ou \textit{software} de sistema. Dizemos que \textit{software} básico faz parte de um conjunto de \textit{softwares}, ou de um sistema, capaz de gerenciar a utilização do \textit{hardware} de modo a fornecer uma plataforma para \textit{softwares} de aplicação (uma ref. aqui).
 
-Entre os tipos de \textit{software} classificados como \textit{software} básico, podemos incluir tradutores (como compiladores e montadores), ligadores, sistemas operacionais (que incluem carregadores e \textit{drivers} de dispositivos) e sistemas embarcados (uma ref. aqui).
+Entre os tipos de \textit{software} classificados como \textit{software} básico, podemos incluir tradutores (como compiladores e montadores), ligadores, sistemas operacionais (que incluem carregadores e \textit{drivers} de dispositivos) e sistemas embarcados (uma ref. aqui). Discutiremos sistemas operacionais na próxima seção.
 
 \subsection{Linguagem de máquina}
 
@@ -53,7 +53,7 @@ Com o conhecimento de como cada mnemônico deve ser convertido para código de m
 
 \subsection{Montadores}
 
-Montadores são programas que traduzem um módulo de compilação em linguagem \textit{assembly} para uma versão em linguagem de máquina. O armazenamento desta versão é feito em um arquivo objeto. Como veremos em uma seção adiante, um arquivo objeto é uma versão binária de um módulo de compilação, que geralmente fica a um passo de poder ser carregada para execução.
+Montadores são programas que traduzem um módulo de compilação em linguagem \textit{assembly} para uma versão em linguagem de máquina. O armazenamento desta versão é feito em um arquivo objeto. Como veremos em uma subseção adiante, um arquivo objeto é uma versão binária de um módulo de compilação, que geralmente fica a um passo de poder ser carregada para execução.
 
 O problema da montagem pode ser colocado da seguinte forma: um módulo de compilação em linguagem \textit{assembly} contém dados e instruções mnemônicas que devem ser convertidas para binário seguindo a ordem em que aparecem. Para termos a noção de localização de um dado ou instrução, temos o conceito de endereço de memória.
 
@@ -115,11 +115,11 @@ Chamamos a saída de um montador de arquivo objeto. Juntamente com o código de 
 
 Uma das estruturas colocadas em um arquivo objeto é uma lista de relocação. Anteriormente definimos o que são endereços. Agora vamos definir o que são endereços absolutos e o que são endereços relativos.
 
-Uma lista de relocação armazena endereços absolutos. Endereços absolutos são endereços calculados utilizando um endereço base. Relocação é o processo de somar um endereço base à um endereço absoluto. Pode-se considerar que, durante a montagem, o endereço base é o endereço zero. Na seção que vem à seguir, veremos mais sobre relocação.
+Uma lista de relocação armazena endereços absolutos. Endereços absolutos são endereços calculados utilizando um endereço base. Relocação é o processo de somar um endereço base à um endereço absoluto. Pode-se considerar que, durante a montagem, o endereço base é o endereço zero. Na subseção que vem à seguir, veremos mais sobre relocação.
 
-Em contrapartida, endereços relativos são endereços que não precisam de relocação, pois são endereços cujo endereço base é a própria posição da instrução. Veremos mais sobre endereços relativos na seção seguinte à próxima.
+Em contrapartida, endereços relativos são endereços que não precisam de relocação, pois são endereços cujo endereço base é a própria posição da instrução. Veremos mais sobre endereços relativos na próxima subseção.
 
-Outra estrutura gerada por um montador é uma tabela de símbolos exportados. Ao definir um símbolo em um módulo de compilação, podemos querer referenciá-lo de outro módulo de compilação. Para que isto seja possível, é necessário declarar quais símbolos de um módulo serão exportados. A seção à seguir trata sobre este assunto.
+Outra estrutura gerada por um montador é uma tabela de símbolos exportados. Ao definir um símbolo em um módulo de compilação, podemos querer referenciá-lo de outro módulo de compilação. Para que isto seja possível, é necessário declarar quais símbolos de um módulo serão exportados. A subseção à seguir trata sobre este assunto.
 
 A terceira e última estrutura presente na saída de um montador é uma tabela de referências externas. Esta é a recíproca da tabela de símbolos exportados. Ao mesmo tempo que um módulo de compilação pode fornecer símbolos a serem referenciados em outros módulos, este mesmo módulo obviamente deve conter informações que dizem aonde símbolos externos foram utilizados. A tabela de referências externas contém listas de referências para cada símbolo importado.
 
@@ -128,6 +128,32 @@ Após criar uma seção inicial no arquivo binário que contém estas informaç�
 \subsection{Ligadores}
 
 Após arquivos objeto de um ou vários módulos de compilação serem gerados por um montador, é preciso combiná-los em um único arquivo que pode ser carregado para a memória por um programa carregador do sistema operacional.
+
+Ligadores utilizam as três informações colocadas nos cabeçalhos de arquivos objeto para gerar arquivos executáveis, ou bibliotecas de código.
+
+Arquivos executáveis, ou módulos de carga, são arquivos que estão quase prontos para serem carregados na memória de um computador e serem executados. A etapa final que pode estar faltando é a relocação de endereços absolutos, caso o programa utilize instruções com este tipo de endereçamento. Discutiremos o processo de carga na próxima subseção.
+
+Bibliotecas de código são arquivos com código de máquina que reúnem diversas funcionalidades e podem ser aproveitadas por outros programas. Bibliotecas dividem-se em bibliotecas estáticas e bibliotecas dinâmicas.
+
+Bibliotecas estáticas são a combinação de vários arquivos objeto que utilizam instruções de máquina com endereços absolutos. Desta forma, para um programa aproveitar uma biblioteca estática, basta que o ligador considere esta biblioteca como um simples arquivo objeto. Portanto, é claro que o ligador também é responsável por gerar informações de relocação, símbolos e referências externas.
+
+Bibliotecas dinâmicas, também consideradas módulos de carga, são a combinação de vários arquivos objeto que utilizam instruções de máquina com endereços relativos. A vantagem de se utilizar endereços relativos é que o módulo de carga pode ser carregado em qualquer posição da memória, sem que relocação seja necessária. Outra vantagem de utilizar bibliotecas dinâmicas, é a produção de arquivos executáveis mais leves. Em alguns sistemas operacionais, apenas uma cópia de uma biblioteca dinâmica na memória é necessária para a execução simultânea de diversos programas.
+
+Neste ponto, deve estar fácil de concluir que ligadores aceitam como entrada não apenas arquivos objeto, como aceitam também bibliotecas.
+
+O processo de ligação é extremamente simples. A primeira tarefa a ser realizada na ligação é o carregamento dos arquivos de entrada em uma determinada ordem. A cada arquivo carregado, o algoritmo de ligação associa um endereço base de posicionamento. Este endereço base é utilizado para relocar todas as instruções de endereçamento absoluto daquele arquivo.
+
+Após carregar, colocar juntos os arquivos de entrada e efetuar as relocações, o algoritmo de ligação une as tabelas de símbolos exportados de cada arquivo em uma grade tabela global de símbolos.
+
+Com a tabela global de símbolos, é possível passar pelas referências externas de cada arquivo, preenchendo cada campo com o respectivo endereço.
+
+Na criação de uma biblioteca estática, o ligador deve gerar uma nova lista de relocação, utilizar a tabela global de símbolos como a nova tabela de símbolos exportados e pode criar uma nova tabela de referências pendentes, caso nem todas as referências tenham sido resolvidas durante aquela ligação. Na criação de uma biblioteca dinâmica, informação de relocação não é gerada.
+
+Ao criar um arquivo executável, o ligador pode gerar informação de relocação e uma tabela de referências externas (para o caso de ligação com bibliotecas dinâmicas). Além disso, o ligador espera que um dos arquivos de entrada exporte um símbolo especial que possa ser estabelecido com o ponto de entrada do programa. Esta é uma regra imposta por formatos de arquivos executáveis, adotados por sistemas operacionais.
+
+Na prática, um ligador quase sempre gera uma tabela de referências externas em arquivos executáveis, pois diversos sistemas operacionais estabelecem que a própria biblioteca dinâmica que implementa operações de ligação deve ser ligada com um programa, obviamente para que seja possível realizar ligações com bibliotecas dinâmicas. A utilização de bibliotecas dinâmicas implica na necessidade de realizar relocação em tempo de execução, pois um sistema operacional pode determinar que uma biblioteca só deve ser carregada quando for de fato chamada (uma ref. aqui).
+
+Com os dados de cabeçalho prontos, o ligador finalmente gera um arquivo binário com código de máquina. À seguir, descrevemos o processo de carregamento de módulos de carga para execução.
 
 \subsection{Carregadores}
 
