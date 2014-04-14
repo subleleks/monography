@@ -7,16 +7,16 @@
 \BOOKMARK [1][-]{section.2.1}{Arquitetura de Processadores}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.2}{Controladores de Dispositivos Externos}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.3}{Sistemas Operacionais}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.4}{Carregadores}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.5}{Ligadores}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.6}{Montadores}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.6.1}{Linguagem de m\341quina}{section.2.6}% 13
-\BOOKMARK [2][-]{subsection.2.6.2}{Algoritmos de montagem}{section.2.6}% 14
-\BOOKMARK [2][-]{subsection.2.6.3}{O algoritmo de duas passagens}{section.2.6}% 15
-\BOOKMARK [2][-]{subsection.2.6.4}{O algoritmo de passagem \372nica}{section.2.6}% 16
-\BOOKMARK [2][-]{subsection.2.6.5}{Arquivos objeto}{section.2.6}% 17
-\BOOKMARK [1][-]{section.2.7}{Compiladores}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.8}{Criptografia}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{Carregadores}{section.2.3}% 10
+\BOOKMARK [1][-]{section.2.4}{Ligadores}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{Montadores}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.5.1}{Linguagem de m\341quina}{section.2.5}% 13
+\BOOKMARK [2][-]{subsection.2.5.2}{Algoritmos de montagem}{section.2.5}% 14
+\BOOKMARK [2][-]{subsection.2.5.3}{O algoritmo de duas passagens}{section.2.5}% 15
+\BOOKMARK [2][-]{subsection.2.5.4}{O algoritmo de passagem \372nica}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.5}{Arquivos objeto}{section.2.5}% 17
+\BOOKMARK [1][-]{section.2.6}{Compiladores}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.7}{Criptografia}{chapter.2}% 19
 \BOOKMARK [0][-]{chapter.3}{Revis\343o Bibliogr\341fica}{}% 20
 \BOOKMARK [0][-]{chapter.4}{Metodologia}{}% 21
 \BOOKMARK [0][-]{chapter.5}{Prot\363tipo do Quinto Cap\355tulo}{}% 22

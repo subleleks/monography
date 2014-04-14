@@ -13,7 +13,7 @@ CPU
 
 CPU
 
-\section{Carregadores}
+\subsection{Carregadores}
 
 CPU
 
@@ -89,7 +89,7 @@ O montador examina cada instrução à procura de símbolos. Símbolos que não 
 
 Ao final da segunda passagem, o montador está pronto para gerar o arquivo objeto. Nesta etapa, coloca-se o código de máquina gerado junto com um espaço alocado para dados. Ao gerar de fato o arquivo de saída, o montador coloca nele informação de relocação, uma tabela de símbolos exportados e uma tabela de referências externas.
 
-A figura \ref{duas_passagens} ilustra a execução de um algoritmo de duas passagens sobre um código \textit{assembly} hipotético utilizado em salas de aula (uma ref. aqui).
+A figura \ref{duas_passagens} ilustra a execução de um algoritmo de duas passagens sobre um código \textit{assembly} hipotético (uma ref. aqui).
 
 Voltaremos agora nossa atenção ao algoritmo de passagem única, desenvolvido para ser mais eficiente do que o algoritmo que acabamos de descrever. Iremos deixar a discussão sobre arquivos objeto para a subseção depois da próxima.
 
@@ -103,7 +103,15 @@ Voltaremos agora nossa atenção ao algoritmo de passagem única, desenvolvido p
 
 \subsection{O algoritmo de passagem única}
 
-O algoritmo de passagem única
+Este algoritmo pode ser considerado uma evolução do algoritmo descrito acima.
+
+Um montador de passagem única constrói a tabela de símbolos ao passo que gera código de máquina. Para trabalhar desta forma, são necessárias listas de referências pendentes.
+
+Para cada símbolo encontrado em uma instrução que não estiver presente na tabela de símbolos, o algoritmo cria uma entrada na tabela, marca o símbolo como indefinido e cria uma lista de referências àquele símbolo.
+
+Ao encontrar a definição de um símbolo, montadores de passagem única ainda geram erro, caso o símbolo já tenha sido definido anteriormente. No entanto, se o símbolo é encontrado na tabela, mas está marcado como indefinido, o algoritmo marca este símbolo como definido, estabelece seu endereço e itera sobre a lista de referências àquele símbolo atualizando os campos com o endereço válido. A implementação de um montador pode escolher atualizar as referências ao final da passagem, ao invés de realizar esta tarefa imediatamente.
+
+Após a passagem ser realizada, se ainda existirem símbolos indefinidos o montador gera erro. O restante do processo é o mesmo que o descrito no algoritmo de duas passagens.
 
 \subsection{Arquivos objeto}
 

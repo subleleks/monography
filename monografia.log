@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.24)  14 APR 2014 01:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.24)  14 APR 2014 02:23
 entering extended mode
 **monografia.tex
 (C:\Users\Pimenta\Documents\workspace\latex\monography\monografia.tex
@@ -764,7 +764,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: B467779D234D7810B493C8C3B7B4CB9A;1608.
+(rerunfilecheck)             Checksum: 2B785C23F2D0E9F7E7A4B4304E3B9AF4;1615.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
 (rerunfilecheck)             Checksum: F82BBC2FED228F972CBA883400F77112;321.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
@@ -772,8 +772,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
 (\end occurred when \iffalse on line 462 was incomplete) 
 Here is how much of TeX's memory you used:
  7945 strings out of 493921
- 113896 string characters out of 3144870
- 212248 words of memory out of 3000000
+ 113906 string characters out of 3144870
+ 212251 words of memory out of 3000000
  11030 multiletter control sequences out of 15000+200000
  25418 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -789,9 +789,9 @@ jfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Pimenta\AppData\Local\MiKTeX\2.
 al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk>{C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/urw/arial/ua1b8a.pfb>
-Output written on monografia.pdf (24 pages, 326098 bytes).
+Output written on monografia.pdf (24 pages, 326560 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
+ 657 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
