@@ -1,3 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: monografia.aux
 The style file: plain.bst
 Database file #1: bibliografia.bib
+Repeated entry---line 143 of file bibliografia.bib
+ : @article{subleq
+ :                ,
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "{Bernstein} Terry, {Bhimani} Anish B., {Schultz} Eugene, {Siegel} Carol A." for entry information_security
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "{Bernstein} Terry, {Bhimani} Anish B., {Schultz} Eugene, {Siegel} Carol A." for entry information_security
+while executing---line 1090 of file plain.bst
+(There were 3 error messages)
