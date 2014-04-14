@@ -1,57 +1,25 @@
 
 \chapter{Referencial Teórico}
 
-\section{Circuitos Digitais}
+\section{Redes de Computadores}
 
 CPU
 
-\subsection{Linguagem de Descrição de \textit{Hardware}}
+\section{Teoria da Codificação e Criptografia}
 
 CPU
 
-\subsection{Arranjo de Portas Programável em Campo}
+\section{Tradutores}
 
 CPU
 
-\subsection{Circuitos Sequenciais}
+\section{Software Básico}
 
-CPU
+Na seção anterior, descrevemos os conceitos básicos necessários para compreender como se dá a criação de um programa de computador, que pode ser por exemplo um \textit{software} de aplicação. Geralmente classificamos os programas utilizados por usuários finais como \textit{software} de aplicação.
 
-\subsection{Lógica Booleana e Circuitos Combinacionais}
+Programas tradutores como os descritos na seção anterior são classificados como \textit{software} básico, ou \textit{software} de sistema. Dizemos que \textit{software} básico faz parte de um conjunto de \textit{softwares}, ou de um sistema, capaz de gerenciar a utilização do \textit{hardware} de modo a fornecer uma plataforma para \textit{softwares} de aplicação (uma ref. aqui).
 
-CPU
-
-\section{Organização e Arquitetura de Computadores}
-
-CPU
-
-\subsection{Arquitetura de Processadores Digitais}
-
-CPU
-
-\subsection{Controladores de Dispositivos Externos}
-
-CPU
-
-\section{Sistemas Operacionais}
-
-CPU
-
-\section{\textit{Software} Básico}
-
-CPU
-
-\subsection{Carregadores}
-
-CPU
-
-\subsection{Ligadores}
-
-Após arquivos objeto de um ou vários módulos de compilação serem gerados por um montador, é preciso combiná-los em um único arquivo que pode ser carregado para a memória por um programa carregador do sistema operacional.
-
-\subsection{Montadores}
-
-Montadores são programas que traduzem um módulo de compilação em linguagem \textit{assembly} para uma versão em linguagem de máquina. O armazenamento desta versão é feito em um arquivo objeto. Como veremos em uma seção adiante, um arquivo objeto é uma versão binária de um módulo de compilação, que geralmente fica a um passo de poder ser carregada para execução.
+Entre os tipos de \textit{software} classificados como \textit{software} básico, podemos incluir tradutores (como compiladores e montadores), ligadores, sistemas operacionais (que incluem carregadores e \textit{drivers} de dispositivos) e sistemas embarcados (uma ref. aqui).
 
 \subsection{Linguagem de máquina}
 
@@ -61,29 +29,31 @@ A etapa seguinte à compilação é a montagem. Nesta etapa, é necessário trad
 
 Costuma-se dizer que a etapa de montagem é onde está localizada a interface \textit{software}-\textit{hardware}. Uma \textit{ISA} - \textit{Instruction Set Architecture}, ou Arquitetura de Conjunto de Instruções - é uma especificação das instruções que uma implementação de processador digital deve fornecer. Esta especificação, entre outras coisas, estabelece os formatos que as sequências de \textit{bits} geradas por montadores devem seguir. Este é o principal conhecimento necessário para construir um montador.
 
+A figura \ref{instrucoes_mips} mostra os três formatos principais de instruções da arquitetura \textit{RISC} \textit{MIPS32} (uma ref. aqui). Grandes quantidades de instruções se encaixam em cada um dos três formatos. Nesta arquitetura, toda e qualquer instrução ocupa uma palavra de 32 \textit{bits}.
+
 \begin{figure}[ptb]
   \begin{center}
-    \includegraphics[scale=.45]{imagens/instrucoes_mips}
+    \includegraphics[scale=.35]{imagens/instrucoes_mips}
   \end{center}
   \caption{Os três formatos principais da \textit{ISA} \textit{MIPS32}.}
   \label{instrucoes_mips}
 \end{figure}
 
-A figura \ref{instrucoes_mips} mostra os três formatos principais de instruções da arquitetura \textit{RISC} \textit{MIPS32}. Grandes quantidades de instruções se encaixam em cada um dos três formatos. Nesta arquitetura, toda e qualquer instrução ocupa uma palavra de 32 \textit{bits}.
-
-A figura \ref{instrucoes_ia32} mostra o formato geral para uma instrução qualquer da arquitetura \textit{CISC} \textit{IA-32}, criada pela Intel. Nesta arquitetura, o tamanho das instruções vai de 1 até 17 \textit{bytes} (um \textit{byte} são exatamente 8 \textit{bits}).
-
-Com o conhecimento de como cada mnemônico deve ser convertido para código de máquina, podemos construir um montador para uma determinada arquitetura de processadores. À seguir descrevemos os algoritmos clássicos de montagem.
+A figura \ref{instrucoes_ia32} mostra o formato geral para uma instrução qualquer da arquitetura \textit{CISC} \textit{IA-32} (uma ref. aqui), criada pela Intel. Nesta arquitetura, o tamanho das instruções vai de 1 até 17 \textit{bytes} (um \textit{byte} são exatamente 8 \textit{bits}).
 
 \begin{figure}[ptb]
   \begin{center}
-    \includegraphics[scale=.6]{imagens/instrucoes_ia32}
+    \includegraphics[scale=.45]{imagens/instrucoes_ia32}
   \end{center}
   \caption{Formato geral de uma instrução da \textit{ISA} \textit{IA-32}.}
   \label{instrucoes_ia32}
 \end{figure}
 
-\subsection{Algoritmos de montagem}
+Com o conhecimento de como cada mnemônico deve ser convertido para código de máquina, podemos construir um montador para uma determinada arquitetura de processadores. À seguir descrevemos os algoritmos clássicos de montagem.
+
+\subsection{Montadores}
+
+Montadores são programas que traduzem um módulo de compilação em linguagem \textit{assembly} para uma versão em linguagem de máquina. O armazenamento desta versão é feito em um arquivo objeto. Como veremos em uma seção adiante, um arquivo objeto é uma versão binária de um módulo de compilação, que geralmente fica a um passo de poder ser carregada para execução.
 
 O problema da montagem pode ser colocado da seguinte forma: um módulo de compilação em linguagem \textit{assembly} contém dados e instruções mnemônicas que devem ser convertidas para binário seguindo a ordem em que aparecem. Para termos a noção de localização de um dado ou instrução, temos o conceito de endereço de memória.
 
@@ -95,9 +65,9 @@ Para realizar a conversão de um arquivo \textit{assembly} para binário, é nec
 
 A próxima subseção descreve o algoritmo de duas passagens, o mais trivial.
 
-\subsection{O algoritmo de duas passagens}
+\subsection{Montadores de duas passagens}
 
-Na primeira passagem pelo código \textit{assembly}, este algoritmo cria uma tabela de símbolos.
+Na primeira passagem pelo código \textit{assembly}, um algoritmo de duas passagem cria uma tabela de símbolos.
 
 A tabela de símbolos é uma estrutura indexada por símbolos (ou rótulos). Para cada símbolo que indexar a tabela, temos uma entrada com o endereço ao qual o símbolo se refere e algumas informações adicionais. É criada uma entrada nesta tabela para cada rótulo que for encontrado no código-fonte. Rótulos podem ser criados tanto para dados, quanto para instruções.
 
@@ -127,9 +97,9 @@ Voltaremos agora nossa atenção ao algoritmo de passagem única, desenvolvido p
   \label{duas_passagens}
 \end{figure}
 
-\subsection{O algoritmo de passagem única}
+\subsection{Montadores de passagem única}
 
-Este algoritmo pode ser considerado uma evolução do algoritmo descrito acima.
+O algoritmo de passagem única pode ser considerado uma evolução do algoritmo descrito acima.
 
 Um montador de passagem única constrói a tabela de símbolos ao passo que gera código de máquina. Para trabalhar desta forma, são necessárias listas de referências pendentes.
 
@@ -141,18 +111,60 @@ Após a passagem ser realizada, se ainda existirem símbolos indefinidos o monta
 
 \subsection{Arquivos objeto}
 
-Chamamos a saída de um montador de código objeto, ou arquivo objeto.
+Chamamos a saída de um montador de arquivo objeto. Juntamente com o código de máquina montado, montadores geram informações necessárias para etapas seguintes, até que o programa possa de fato ser executado em uma \textit{CPU}.
 
-Tabela de relocação (endereços absolutos e relativos).
+Uma das estruturas colocadas em um arquivo objeto é uma lista de relocação. Anteriormente definimos o que são endereços. Agora vamos definir o que são endereços absolutos e o que são endereços relativos.
 
-Tabela de símbolos exportados.
+Uma lista de relocação armazena endereços absolutos. Endereços absolutos são endereços calculados utilizando um endereço base. Relocação é o processo de somar um endereço base à um endereço absoluto. Pode-se considerar que, durante a montagem, o endereço base é o endereço zero. Na seção que vem à seguir, veremos mais sobre relocação.
 
-Tabela de referências externas.
+Em contrapartida, endereços relativos são endereços que não precisam de relocação, pois são endereços cujo endereço base é a própria posição da instrução. Veremos mais sobre endereços relativos na seção seguinte à próxima.
 
-\section{Compiladores}
+Outra estrutura gerada por um montador é uma tabela de símbolos exportados. Ao definir um símbolo em um módulo de compilação, podemos querer referenciá-lo de outro módulo de compilação. Para que isto seja possível, é necessário declarar quais símbolos de um módulo serão exportados. A seção à seguir trata sobre este assunto.
+
+A terceira e última estrutura presente na saída de um montador é uma tabela de referências externas. Esta é a recíproca da tabela de símbolos exportados. Ao mesmo tempo que um módulo de compilação pode fornecer símbolos a serem referenciados em outros módulos, este mesmo módulo obviamente deve conter informações que dizem aonde símbolos externos foram utilizados. A tabela de referências externas contém listas de referências para cada símbolo importado.
+
+Após criar uma seção inicial no arquivo binário que contém estas informações, seção que geralmente é denominada como cabeçalho, o montador coloca na saída o código de máquina montado. A etapa seguinte à montagem é ligação.
+
+\subsection{Ligadores}
+
+Após arquivos objeto de um ou vários módulos de compilação serem gerados por um montador, é preciso combiná-los em um único arquivo que pode ser carregado para a memória por um programa carregador do sistema operacional.
+
+\subsection{Carregadores}
 
 CPU
 
-\section{Criptografia}
+\section{Sistemas Operacionais}
+
+CPU
+
+\section{Organização e Arquitetura de Computadores}
+
+CPU
+
+\subsection{Arquitetura de Processadores Digitais}
+
+CPU
+
+\subsection{Controladores de Dispositivos Externos}
+
+CPU
+
+\section{Circuitos Digitais}
+
+CPU
+
+\subsection{Lógica Booleana e Circuitos Combinacionais}
+
+CPU
+
+\subsection{Circuitos Sequenciais}
+
+CPU
+
+\subsection{Arranjo de Portas Programável em Campo}
+
+CPU
+
+\subsection{Linguagem de Descrição de Hardware}
 
 CPU
