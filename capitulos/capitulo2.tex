@@ -61,7 +61,7 @@ conhecimento definam \textit{linguagem} por formas específicas, para nosso
 trabalho será suficiente uma definição geral.
 
 % OK, lá vai... Linguagem
-Linguagem é um sistema de comunicação - um conjunto de regras e convenções que
+Linguagem é um sistema de comunicação --- um conjunto de regras e convenções que
 permitem a interação entre dois pares. Dialetos humanos (português, inglês,
 francês...) são exemplos de tais sistemas de comunicação. Cada um destes define
 acordos (gramáticas, sintaxe, morfologia) que permitem a troca de mensagens
@@ -79,19 +79,25 @@ até completa inabilidade de se comunicar.
 Partindo para o domínio computacional, há o conceito de linguagens de
 programação. Estas possuem objetivo de comunicar instruções de seres humanos
 para máquinas. Mais especificamente, possuem o objetivo de determinar o que
-computadores devem fazer - como estes são programados a agir.
+computadores devem fazer --- como estes são programados a agir.
 
 % Programação -> Máquina
 Linguagens de programação são destinadas a expressar idéias concebidas por seres
-humanos. Dessa forma, precisam se aproximar da linguagem natural - forma de
+humanos. Dessa forma, precisam se aproximar da linguagem natural --- forma de
 comunicação natural entre seres humanos.  Devido à construção física de
 máquinas, computadores precisam de instruções em formato bastante diferente do
-oferecido pela linguagem natural - quanto mais de linguagens de programação.
+oferecido pela linguagem natural --- quanto mais de linguagens de programação.
 
 \subsection{Linguagem de Máquina}
 
+% WE RULE THE MACHINES
+Máquinas, em geral, necessitam da intervenção humana para seu
+funcionamento. Seja para controlar suas atividades ou simplesmente efetuar
+manutenção, o homem necessita interferir no processo de uma máquina para
+garantir sua atividade.
+
 % Linguagem de máquina
-É nesse conceito que se define a linguagem de máquina, também conhecida como
+É nesse âmbito que se define a linguagem de máquina, também conhecida como
 código de máquina. São conjuntos de instruções (ou ordens) que determinam como a
 máquina irá se comportar. Controla-se um computador ao agrupar várias dessas
 instruções em ordens específicas.
@@ -102,19 +108,71 @@ que não são facilmente compreendidas por seres humanos. Enquanto que linguagen
 de programação se aproximam da linguagem natural, linguagem de máquina é
 definida pela construção física dos componentes de cada máquina.
 
-Observaremos mais detalhes sobre linguagem de maquina na seçao
+% DAR UM EXEMPLO DE LINGUAGEM DE MAQUINA
+
+Exploraremos detalhes das linguagens de maquina na seçao
 \ref{subsec:linguagem_maquina}.
 
+\subsection{Linguagem de Montagem}
+
+Enquanto que é possível que se programe em linguagem de máquina, é altamente
+contraprodutivo. Como as instruções são ilegíveis para o ser humano, exige muito
+esforço para criar e compreender programas pouco complexos.
+
+Surge a necessidade de tornar a programação mais compreensível ao homem.
+
+Linguagens de montagem, ou linguagens \textit{assembly}, servem a esse
+propósito. Elas agem como intermediários entre a linguagem de máquina e a
+linguagem natural.
+
+Elas definem mnemônicos (palavras-chave) para abstrair instruções físicas de
+computadores. Por exemplo, em computadores MIPS o palavra-chave ``\textbf{add
+  \$t0 \$t1 \$t2}'' se traduz em um valor binário ``\textbf{1000 0010 0010 0110
+  1000 0001 1000 0000}'' (ou ``\textbf{82268180}'' em
+hexadecimal). Compreenderemos mais sobre esse assunto na seção
+\ref{sec:software_basico}.
+
+Linguagens de montagem tambem podem encapsular sequências de instruções físicas
+em um único mnemônico --- chamadas de pseudo-instruções. Com o intuito de
+facilitar o trabalho do programador, uma palavra-chave pode se resolver em
+várias instruções físicas.
+
 \subsection{Linguagens de Alto e Baixo nível}
+
+Linguagens de programação podem ser agrupadas em dois grandes grupos: linguagens
+de alto nível e linguagens de baixo nível. Esse ``nível'' se refere à
+proximidade ou distância entre dois extremos: linguagem de máquina e linguagem
+natural --- observe a imagem \ref{linguagens}.
+
+Linguagens de baixo nível estão próximas da linguagem de máquina. Elas possuem
+poucas abstraçoes em relação à arquitetura do conjunto de instruções (veja na
+seção \label{subsec:apd}). A linguagem de montagem é um exemplo.
+
+Por se aproximar da linguagem natural, linguagens de alto nível são mais
+facilmente compreendidas por seres humanos.
+
+% As várias camadas bonitinhas
+\begin{figure}[ptb]
+  \begin{center}
+    \includegraphics[scale=.6]{imagens/1_linguagens}
+  \end{center}
+  \caption{Níveis de linguagens de programação.}
+  \label{linguagens}
+\end{figure}
+
+
+Porém linguagens de alto nível não existem por si só - elas precisam ser
+executadas por computadores --- que só ``entendem'' linguagem de máquina.
+
+\subsection{Tradução}
 
 % Linguagens de alto-nível e baixo-nível, exemplos
 Com linguagens em pontos tão extremos, como alto e baixo nível, se torna
 impossível a comunicação entre pares que as utilizem. Necessita-se de um meio de
 conversão entre estas.
 
-\subsection{Tradução}
-
-% Tradução - duas linguagens % CITAR COISA ABSTRATA SOBRE LINGUAGENS
+% Tradução - duas linguagens
+% CITAR COISA ABSTRATA SOBRE LINGUAGENS
 
 % Exemplos de tradução
 
@@ -127,6 +185,7 @@ de programação em outra. Eles fazem o processo de tradução, em geral de
 linguagens de alto nível para linguagens de baixo-nível.
 
 \section{Software Básico}
+\label{sec:software_basico}
 
 Na seção anterior, descrevemos os conceitos básicos necessários para compreender
 como se dá a criação de um programa de computador, que pode ser por exemplo um
@@ -148,9 +207,10 @@ próxima seção.
 \subsection{Linguagem de Máquina}
 \label{subsec:linguagem_maquina}
 
-Anteriormente vimos que uma linguagem de montagem, ou linguagem
-\textit{assembly}, é formada por símbolos mnemônicos, ou palavras-chave, que
-identificam as instruções que um processador é capaz de executar.
+Na seção \ref{subsec:linguagem_montagem}, vimos que uma linguagem de montagem,
+ou linguagem \textit{assembly}, é formada por símbolos mnemônicos, ou
+palavras-chave, que identificam as instruções que um processador é capaz de
+executar.
 
 A etapa seguinte à compilação é a montagem. Nesta etapa, é necessário traduzir
 os mnemônicos \textit{assembly} para sequências de \textit{bits}. Um
@@ -451,6 +511,7 @@ CPU
 CPU
 
 \subsection{Arquitetura de Processadores Digitais}
+\label{subsec:apd}
 
 CPU
 
