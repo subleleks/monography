@@ -1,26 +1,151 @@
 
 \chapter{Introdução}
 
-Com a necessidade humana de se comunicar à distância, a engenharia deu luz às Telecomunicações \cite{telecommunications}. Com esta novidade, é possível tanto que pais e filhos se comuniquem estando em cidades distintas, quanto estratégias de guerra sejam elaboradas em conjunto por países de continentes diferentes. Comum em ambas as situações, é o fato de que as duas pontas da comunicação desejam privacidade. Isto é, pais e filhos não querem que seus vizinhos tomem conhecimento das mensagens que trocam. Tampouco, países aliados pretendem que suas estratégias falhem por vazamento de informação.
+Com a necessidade humana de se comunicar à distância, a engenharia deu luz às
+Telecomunicações \cite{telecommunications}. Com esta novidade, é possível tanto
+que pais e filhos se comuniquem estando em cidades distintas, quanto estratégias
+de guerra sejam elaboradas em conjunto por países de continentes
+diferentes. Comum em ambas as situações, é o fato de que as duas pontas da
+comunicação desejam privacidade. Isto é, pais e filhos não querem que seus
+vizinhos tomem conhecimento das mensagens que trocam. Tampouco, países aliados
+pretendem que suas estratégias falhem por vazamento de informação.
 
-Para tornar possível o sigilo na troca de mensagens à distância, estudos são realizados na área que hoje chamamos de Segurança da Informação \cite{information_security}. Diversas técnicas são desenvolvidas nesta área até hoje, para tentar garantir que um par de comunicação possa trocar informações sem que estas chegem ao conhecimento de adversários. Entre estas técnicas, as mais conhecidas e utilizadas nasceram da Criptografia \cite{cryptography}.
+Para tornar possível o sigilo na troca de mensagens à distância, estudos são
+realizados na área que hoje chamamos de Segurança da Informação
+\cite{information_security}.
 
-A Criptografia estuda maneiras de criar uma versão ilegível de uma determinada mensagem, de modo que adversários com acesso ao canal inseguro pelo qual a mensagem será transmitida, por exemplo a Internet \cite{internet}, não tenham acesso à informação contida na mensagem, e de modo que somente o destinatário seja capaz de reverter este processo, que chamamos de cifragem. A Criptografia estuda também maneiras de autenticar uma fonte, isto é, um destinatário que recebe uma mensagem deve poder estar seguro de que esta foi de fato enviada pelo remetente do qual este destinatário espera receber esta mensagem.
+Diversas técnicas são desenvolvidas nesta área até hoje, para tentar garantir
+que um par de comunicação possa trocar informações sem que estas chegem ao
+conhecimento de adversários. Entre estas técnicas, as mais conhecidas e
+utilizadas nasceram da Criptografia \cite{cryptography}.
 
-Atualmente, os sistemas criptográficos mais empregados são os sistemas assimétricos (uma ref. aqui). Nestes sistemas, cada ponta da comunicação possui um par do que chamamos de chaves criptográficas. Uma chave criptográfica pode ser, por exemplo, uma frase. Os pares de chaves criptográficas são utilizados para cifrar e decifrar mensagens através de algoritmos criptográficos. Um algoritmo de criptografia assimétrica é uma sequência de passos que utiliza uma mensagem e uma chave de um par de chaves criptográficas para produzir algo que chamamos de criptograma, uma versão ilegível da mensagem original. Para reconstruir a mensagem original, utiliza-se uma sequência de passos de volta do algoritmo criptográfico, que utiliza o criptograma gerado anteriormente e a outra chave do par de chaves criptográficas. Sistemas criptográficos assimétricos utilizam pares de chaves, para que uma das chaves de alguém que se comunica seja pública, ou seja, conhecida por todos os que se comunicam, enquanto a outra chave do par deve ser privada, ou seja, somente este alguém que se comunica conhece sua chave privada. Deste modo, é possível trocar mensagens de maneira segura e simultaneamente autêntica, seguindo por exemplo a convenção de "assinar e colocar em um envelope" (cria-se um criptograma com a chave privada do remetente, une-se este criptograma com a mensagem original em uma única mensagem e transmite-se um criptograma da mensagem total, criado com a chave pública do destinatário. Deste modo, só o destinatário é capaz de abrir a mensagem total. Além disso, para verificar a autenticidade, basta verificar se a decifragem do criptograma interno utilizando a chave pública do remetente bate com a mensagem original).
+A Criptografia estuda maneiras de criar uma versão ilegível de uma determinada
+mensagem, de modo que adversários com acesso ao canal inseguro pelo qual a
+mensagem será transmitida, por exemplo a Internet \cite{internet}, não tenham
+acesso à informação contida na mensagem, e de modo que somente o destinatário
+seja capaz de reverter este processo, que chamamos de cifragem.
 
-É claro que entre os adversários interessados em obter informações sigilosas existem os mais astutos, praticantes de Criptanálise \cite{cryptanalysis}. Diversas maneiras de se quebrar uma segurança são descobertas todos os dias. Uma maneira que vem sendo utilizada mais recentemente, devido ao aumento do poder computacional disponível, é a busca exaustiva por chaves \cite{agosta2012exploiting}. É normal determinar que um sistema criptográfico é seguro se o melhor ataque conhecido não é mais eficiente do que a busca exaustiva no espaço de chaves.
+A Criptografia estuda também maneiras de autenticar uma fonte, isto é, um
+destinatário que recebe uma mensagem deve poder estar seguro de que esta foi de
+fato enviada pelo remetente do qual este destinatário espera receber esta
+mensagem.
 
-Dos tipos de ataque existentes, o que é abordado neste trabalho chamamos de ataque de canal lateral \cite{mohamed2013improved}. Um ataque de canal lateral se baseia nas informações fornecidas pela parte física do sistema computacional utilizado para executar um algoritmo criptográfico, como por exemplo o consumo de energia em função do tempo.
+Atualmente, os sistemas criptográficos mais empregados são os sistemas
+assimétricos (uma ref. aqui). Nestes sistemas, cada ponta da comunicação possui
+um par do que chamamos de chaves criptográficas. Uma chave criptográfica pode
+ser, por exemplo, uma frase.
 
-Um computador funciona através de instruções. Uma instrução é um código que contém a informação de qual operação deve ser realiza pela máquina e quais dados devem ser utilizados como operandos. Historicamente, os primeiros computadores desenvolvidos são hoje chamados de computadores \textit{CISC} - \textit{Complex Instruction Set Computer}, ou Computador de Conjunto de Instruções Complexo \cite{chang1999customization}. O nome vem do fato de que os computadores oferenciam uma grande variedade de instruções, com diversas funcionalides complexas e por isso a estrutura interna da unidade central de processamento - \textit{CPU} - era bastante irregular, ou desorganizada.
+Os pares de chaves criptográficas são utilizados para cifrar e decifrar
+mensagens através de algoritmos criptográficos. Um algoritmo de criptografia
+assimétrica é uma sequência de passos que utiliza uma mensagem e uma chave de um
+par de chaves criptográficas para produzir algo que chamamos de criptograma, uma
+versão ilegível da mensagem original.
 
-Passado um certo tempo após a invenção dos processadores digitais, um novo modelo de arquitetura foi proposto. O modelo \textit{RISC} - \textit{Reduced Instruction Set Computer}, ou Computador de Conjunto de Instruções Reduzido \cite{patterson} - prega que o conjunto de instruções de um computador deve ser regular, de modo que é possível otimizar as operações mais frequentes na implementação da \textit{CPU}.
+Para reconstruir a mensagem original, utiliza-se uma sequência de passos de
+volta do algoritmo criptográfico, que utiliza o criptograma gerado anteriormente
+e a outra chave do par de chaves criptográficas.
 
-Sabe-se que a intensidade do consumo de energia de um processador digital, em um determinado instante do tempo, depende diretamente da instrução que está sendo executada \cite{hsieh2001microprocessor}. Em um computador \textit{CISC} isto é mais evidente, dado que a irregularidade do conjunto de instruções se reflete na implementação física do processador. Em contrapartida, é de se esperar que computadores \textit{RISC} reflitam consumos de energia por instrução mais ininteligíveis. No entanto, os consumos de energia por instrução em computadores \textit{RISC} não são indiferenciáveis ao ponto de que um atacante experiente seja impedido de identificar um algoritmo criptográfico que está sendo executado em uma máquina deste tipo.
+Sistemas criptográficos assimétricos utilizam pares de chaves, para que uma das
+chaves de alguém que se comunica seja pública, ou seja, conhecida por todos os
+que se comunicam, enquanto a outra chave do par deve ser privada, ou seja,
+somente este alguém que se comunica conhece sua chave privada.
 
-Mais recentemente, surgiu o modelo de computador \textit{OISC} - \textit{One Instruction Set Computer}, ou Computador de Instrução Única \cite{ong2010implementation}. Computadores \textit{OISC} possuem a vantagem de que, independente do consumo de energia em função do tempo, não é possível diferenciar quais instruções estão sendo executadas em um intervalo de tempo, porque só existe uma única instrução! A tendência do consumo de energia de uma \textit{CPU} \textit{OISC} em função do tempo é ser uma função periódica, isto é, uma função cujo valor em qualquer ponto inicial é exatamente o mesmo que o avaliado em qualquer ponto cuja distância ao ponto inicial é um valor múltiplo de um determinado período (neste caso, um período de tempo). No entanto, por mais que hajam pequenas oscilações no consumo de energia, a dificuldade de se não poder identificar qual operação está sendo de fato executada em um determinado instante cria uma grande dificuldade para ataques de canal lateral.
+Deste modo, é possível trocar mensagens de maneira segura e simultaneamente
+autêntica, seguindo por exemplo a convenção de "assinar e colocar em um
+envelope" (cria-se um criptograma com a chave privada do remetente, une-se este
+criptograma com a mensagem original em uma única mensagem e transmite-se um
+criptograma da mensagem total, criado com a chave pública do destinatário. Deste
+modo, só o destinatário é capaz de abrir a mensagem total. Além disso, para
+verificar a autenticidade, basta verificar se a decifragem do criptograma
+interno utilizando a chave pública do remetente bate com a mensagem original).
 
-Apesar de ser um modelo de computador mais seguro, computadores \textit{OISC} não são muito atraentes, por conta do fato de que quanto mais reduzido é o conjunto de instruções de um computador, mais trabalho é colocado sobre os ombros dos programadores. O objetivo deste trabalho, no entanto, é mostrar que é possível construir um sistema computacional completo, de propósito geral, sobre uma máquina de instrução única. O sistema foi construído em um \textit{FPGA} - \textit{Field-programmable Gate Array}, ou Arranjo de Portas Programável em Campo \cite{brant2012zuma} - utilizando a instrução Turing-completa \textit{subleq} - \textit{Subtract and branch if less or equal to zero}, ou subtrair e pular para outra instrução se o resultado for menor ou igual a zero \cite{subleq}.
+É claro que entre os adversários interessados em obter informações sigilosas
+existem os mais astutos, praticantes de Criptanálise
+\cite{cryptanalysis}. Diversas maneiras de se quebrar uma segurança são
+descobertas todos os dias.
 
-O sistema computacional aqui proposto contempla todos os níveis de abstração de um sistema computacional. Indo do nível mais baixo ao mais alto, implementamos o \textit{hardware} (incluindo \textit{CPU} e controladores de dispositivos externos), o \textit{software} básico (incluindo compilador, montador, ligador e sistema operacional) e \textit{softwares} de aplicação (incluindo aplicações com algoritmos criptográficos).
+Uma maneira que vem sendo utilizada mais recentemente, devido ao aumento do
+poder computacional disponível, é a busca exaustiva por chaves
+\cite{agosta2012exploiting}. É normal determinar que um sistema criptográfico é
+seguro se o melhor ataque conhecido não é mais eficiente do que a busca
+exaustiva no espaço de chaves.
+
+Dos tipos de ataque existentes, o que é abordado neste trabalho chamamos de
+ataque de canal lateral \cite{mohamed2013improved}. Um ataque de canal lateral
+se baseia nas informações fornecidas pela parte física do sistema computacional
+utilizado para executar um algoritmo criptográfico, como por exemplo o consumo
+de energia em função do tempo.
+
+% back to the basics
+
+Um computador funciona através de instruções. Uma instrução é um código que
+contém a informação de qual operação deve ser realiza pela máquina e quais dados
+devem ser utilizados como operandos.
+
+Historicamente, os primeiros computadores desenvolvidos são hoje chamados de
+computadores \textit{CISC} - \textit{Complex Instruction Set Computer}, ou
+Computador de Conjunto de Instruções Complexo \cite{chang1999customization}. O
+nome vem do fato de que os computadores oferenciam uma grande variedade de
+instruções, com diversas funcionalides complexas e por isso a estrutura interna
+da unidade central de processamento - \textit{CPU} - era bastante irregular, ou
+desorganizada.
+
+Passado um certo tempo após a invenção dos processadores digitais, um novo
+modelo de arquitetura foi proposto. O modelo \textit{RISC} - \textit{Reduced
+  Instruction Set Computer}, ou Computador de Conjunto de Instruções Reduzido
+\cite{patterson} - prega que o conjunto de instruções de um computador deve ser
+regular, de modo que é possível otimizar as operações mais frequentes na
+implementação da \textit{CPU}.
+
+Sabe-se que a intensidade do consumo de energia de um processador digital, em um
+determinado instante do tempo, depende diretamente da instrução que está sendo
+executada \cite{hsieh2001microprocessor}. Em um computador \textit{CISC} isto é
+mais evidente, dado que a irregularidade do conjunto de instruções se reflete na
+implementação física do processador.
+
+Em contrapartida, é de se esperar que computadores \textit{RISC} reflitam
+consumos de energia por instrução mais ininteligíveis. No entanto, os consumos
+de energia por instrução em computadores \textit{RISC} não são indiferenciáveis
+ao ponto de que um atacante experiente seja impedido de identificar um algoritmo
+criptográfico que está sendo executado em uma máquina deste tipo.
+
+Mais recentemente, surgiu o modelo de computador \textit{OISC} - \textit{One
+  Instruction Set Computer}, ou Computador de Instrução Única
+\cite{ong2010implementation}. Computadores \textit{OISC} possuem a vantagem de
+que, independente do consumo de energia em função do tempo, não é possível
+diferenciar quais instruções estão sendo executadas em um intervalo de tempo,
+porque só existe uma única instrução!
+
+A tendência do consumo de energia de uma \textit{CPU} \textit{OISC} em função do
+tempo é ser uma função periódica, isto é, uma função cujo valor em qualquer
+ponto inicial é exatamente o mesmo que o avaliado em qualquer ponto cuja
+distância ao ponto inicial é um valor múltiplo de um determinado período (neste
+caso, um período de tempo).
+
+No entanto, por mais que hajam pequenas oscilações no consumo de energia, a
+dificuldade de se não poder identificar qual operação está sendo de fato
+executada em um determinado instante cria uma grande dificuldade para ataques de
+canal lateral.
+
+Apesar de ser um modelo de computador mais seguro, computadores \textit{OISC}
+não são muito atraentes, por conta do fato de que quanto mais reduzido é o
+conjunto de instruções de um computador, mais trabalho é colocado sobre os
+ombros dos programadores.
+
+O objetivo deste trabalho, no entanto, é mostrar que é possível construir um
+sistema computacional completo, de propósito geral, sobre uma máquina de
+instrução única.
+
+O sistema foi construído em um \textit{FPGA} - \textit{Field-programmable Gate
+  Array}, ou Arranjo de Portas Programável em Campo \cite{brant2012zuma} -
+utilizando a instrução Turing-completa \textit{subleq} - \textit{Subtract and
+  branch if less or equal to zero}, ou subtrair e pular para outra instrução se
+o resultado for menor ou igual a zero \cite{subleq}.
+
+O sistema computacional aqui proposto contempla todos os níveis de abstração de
+um sistema computacional. Indo do nível mais baixo ao mais alto, implementamos o
+\textit{hardware} (incluindo \textit{CPU} e controladores de dispositivos
+externos), o \textit{software} básico (incluindo compilador, montador, ligador e
+sistema operacional) e \textit{softwares} de aplicação (incluindo aplicações com
+algoritmos criptográficos).
+
