@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.4.5}Tradu\IeC {\c c}\IeC {\~a}o}{6}{subsection.2.4.5}
 \contentsline {subsection}{\numberline {2.4.6}Compiladores}{6}{subsection.2.4.6}
 \contentsline {section}{\numberline {2.5}Software B\IeC {\'a}sico}{6}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Linguagem de m\IeC {\'a}quina}{6}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Linguagem de M\IeC {\'a}quina}{6}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Montadores}{7}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Montadores de duas passagens}{8}{subsection.2.5.3}
 \contentsline {subsection}{\numberline {2.5.4}Montadores de passagem \IeC {\'u}nica}{9}{subsection.2.5.4}
