@@ -1,4 +1,32 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{agosta2012exploiting}
+Giovanni Agosta, Alessandro Barenghi, and Gerardo Pelosi.
+\newblock Exploiting bit-level parallelism in gpgpus: A case study on keeloq
+  exhaustive key search attack.
+\newblock In {\em ARCS Workshops (ARCS), 2012}, pages 1--7. IEEE, 2012.
+
+\bibitem{information_security}
+{Schultz} Eugene {Siegel} Carol~A. {Bernstein}~Terry, {Bhimani} Anish~B.
+\newblock {\em Internet Security for Business}.
+\newblock Wiley, 1996.
+
+\bibitem{brant2012zuma}
+Alexander Brant and Guy~GF Lemieux.
+\newblock Zuma: an open fpga overlay architecture.
+\newblock In {\em Field-Programmable Custom Computing Machines (FCCM), 2012
+  IEEE 20th Annual International Symposium on}, pages 93--96. IEEE, 2012.
+
+\bibitem{chang1999customization}
+You-Sung Chang, Bong-Il Park, In-Cheol Park, and Chong-Min Kyung.
+\newblock Customization of a cisc processor core for low-power applications.
+\newblock In {\em Computer Design, 1999.(ICCD'99) International Conference on},
+  pages 152--157. IEEE, 1999.
+
+\bibitem{cryptanalysis}
+{Swenson} Christopher.
+\newblock {\em Modern Cryptanalysis: Techniques for Advanced Code Breaking}.
+\newblock Wiley, 2008.
 
 \bibitem{minimalist}
 {Laplante} Phillip~A. {Gilreath} William~F.
@@ -11,10 +39,32 @@
 \newblock {\em {Computer Architecture: A Quantitative Approach}}.
 \newblock Morgan Kaufman Publishers, 1989.
 
+\bibitem{hsieh2001microprocessor}
+Cheng-Ta Hsieh, Lung-sheng Chen, and Massoud Pedram.
+\newblock Microprocessor power analysis by labeled simulation.
+\newblock In {\em Proceedings of the conference on Design, automation and test
+  in Europe}, pages 182--189. IEEE Press, 2001.
+
+\bibitem{internet}
+{Ross} Keith~W. {Kurose} James~F.
+\newblock {\em Computer Networking: A Top-Down Approach}.
+\newblock Pearson, 2012.
+
+\bibitem{telecommunications}
+{Ding}~Zhi {Lathi} B.~P.
+\newblock {\em Modern Digital and Analog Communication Systems}.
+\newblock Oxford University Press, 2009.
+
 \bibitem{subleq}
 O.~{Mazonka} and A.~{Kolodin}.
 \newblock {A Simple Multi-Processor Computer Based on Subleq}.
 \newblock {\em ArXiv e-prints}, June 2011.
+
+\bibitem{mohamed2013improved}
+Mohamed Saied~Emam Mohamed, Stanislav Bulygin, Michael Zohner, Annelie Heuser,
+  Michael Walter, and Johannes Buchmann.
+\newblock Improved algebraic side-channel attack on aes.
+\newblock {\em Journal of Cryptographic Engineering}, 3(3):139--156, 2013.
 
 \bibitem{mostafa}
 Hesham El-Rewini Mostafa Abd-El-Barr.
@@ -26,11 +76,23 @@ Hesham El-Rewini Mostafa Abd-El-Barr.
 \newblock {\em {Principles of Computer Architecture}}.
 \newblock Prentice Hall, 1999.
 
+\bibitem{ong2010implementation}
+Jia~Jan Ong, L-M Ang, and KP~Seng.
+\newblock Implementation of (15, 9) reed solomon minimal instruction set
+  computing on fpga using handel-c.
+\newblock In {\em Computer Applications and Industrial Electronics (ICCAIE),
+  2010 International Conference on}, pages 356--361. IEEE, 2010.
+
 \bibitem{patterson}
 {Hennessy} John~L. {Patterson}~David.
 \newblock {\em {Computer Organization and Design: the Hardware/Software
   Interface}}.
 \newblock The Morgan Kaufmann Series in Computer Architecture and Design.
   Morgan Kaufmann Publishers, 2011.
+
+\bibitem{cryptography}
+{Stinson}~Douglas R.
+\newblock {\em Cryptography: Theory and Practice}.
+\newblock Chapman and Hall/CRC, 2005.
 
 \end{thebibliography}

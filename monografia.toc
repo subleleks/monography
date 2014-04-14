@@ -3,33 +3,32 @@
 \select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Referencial Te\IeC {\'o}rico}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Arquitetura de Processadores}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Redes de Computadores}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Teoria da Codifica\IeC {\c c}\IeC {\~a}o e Criptografia}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Tradutores}{5}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Linguagens}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Linguagens de Programa\IeC {\c c}\IeC {\~a}o}{5}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Linguagem de M\IeC {\'a}quina}{5}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Linguagens de Alto e Baixo n\IeC {\'\i }vel}{6}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Tradu\IeC {\c c}\IeC {\~a}o}{6}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Compiladores}{6}{subsection.2.4.6}
-\contentsline {section}{\numberline {2.5}Software B\IeC {\'a}sico}{6}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Linguagem de M\IeC {\'a}quina}{6}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Montadores}{7}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Montadores de duas passagens}{8}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Montadores de passagem \IeC {\'u}nica}{9}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Arquivos objeto}{10}{subsection.2.5.5}
-\contentsline {subsection}{\numberline {2.5.6}Ligadores}{10}{subsection.2.5.6}
-\contentsline {subsection}{\numberline {2.5.7}Carregadores}{12}{subsection.2.5.7}
-\contentsline {section}{\numberline {2.6}Sistemas Operacionais}{12}{section.2.6}
-\contentsline {section}{\numberline {2.7}Organiza\IeC {\c c}\IeC {\~a}o e Arquitetura de Computadores}{12}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Arquitetura de Processadores Digitais}{12}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Controladores de Dispositivos Externos}{12}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Circuitos Digitais}{12}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}L\IeC {\'o}gica Booleana e Circuitos Combinacionais}{12}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Circuitos Sequenciais}{12}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Arranjo de Portas Program\IeC {\'a}vel em Campo}{12}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Linguagem de Descri\IeC {\c c}\IeC {\~a}o de Hardware}{13}{subsection.2.8.4}
+\contentsline {section}{\numberline {2.1}Redes de Computadores}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Teoria da Codifica\IeC {\c c}\IeC {\~a}o e Criptografia}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tradutores}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Linguagens}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Linguagens de Programa\IeC {\c c}\IeC {\~a}o}{5}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Linguagem de M\IeC {\'a}quina}{5}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Linguagens de Alto e Baixo n\IeC {\'\i }vel}{6}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Tradu\IeC {\c c}\IeC {\~a}o}{6}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Compiladores}{6}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Software B\IeC {\'a}sico}{6}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Linguagem de M\IeC {\'a}quina}{6}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Montadores}{7}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Montadores de duas passagens}{8}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Montadores de passagem \IeC {\'u}nica}{9}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Arquivos objeto}{10}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Ligadores}{11}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Carregadores}{12}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Sistemas Operacionais}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}Organiza\IeC {\c c}\IeC {\~a}o e Arquitetura de Computadores}{12}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Arquitetura de Processadores Digitais}{12}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Controladores de Dispositivos Externos}{12}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Circuitos Digitais}{12}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}L\IeC {\'o}gica Booleana e Circuitos Combinacionais}{12}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Circuitos Sequenciais}{12}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Arranjo de Portas Program\IeC {\'a}vel em Campo}{13}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Linguagem de Descri\IeC {\c c}\IeC {\~a}o de Hardware}{13}{subsection.2.7.4}
 \contentsline {chapter}{\numberline {3}Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}{14}{chapter.3}
 \contentsline {chapter}{\numberline {4}Metodologia}{15}{chapter.4}
 \contentsline {chapter}{\numberline {5}Prot\IeC {\'o}tipo do Quinto Cap\IeC {\'\i }tulo}{16}{chapter.5}

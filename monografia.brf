@@ -1,3 +1,16 @@
+\backcite {telecommunications}{{1}{1}{chapter.1}}
+\backcite {information_security}{{1}{1}{chapter.1}}
+\backcite {cryptography}{{1}{1}{chapter.1}}
+\backcite {internet}{{1}{1}{chapter.1}}
+\backcite {cryptanalysis}{{2}{1}{chapter.1}}
+\backcite {agosta2012exploiting}{{2}{1}{chapter.1}}
+\backcite {mohamed2013improved}{{2}{1}{chapter.1}}
+\backcite {chang1999customization}{{2}{1}{chapter.1}}
+\backcite {patterson}{{2}{1}{chapter.1}}
+\backcite {hsieh2001microprocessor}{{2}{1}{chapter.1}}
+\backcite {ong2010implementation}{{2}{1}{chapter.1}}
+\backcite {brant2012zuma}{{3}{1}{chapter.1}}
+\backcite {subleq}{{3}{1}{chapter.1}}
 \backcite {principles}{{4}{2}{chapter.2}}
 \backcite {hennessy}{{16}{5.1}{section.5.1}}
 \backcite {patterson}{{16}{5.1}{section.5.1}}
