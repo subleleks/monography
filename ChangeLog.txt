@@ -1,4 +1,4 @@
-- hardware desenvolvido em verilog
+- hardware desenvolvido em Verilog
 - montador desenvolvido em C++
 - ligador desenvolvido em C++
 - simulador desenvolvido em C++
