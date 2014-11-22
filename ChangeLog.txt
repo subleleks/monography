@@ -1,0 +1,6 @@
+- hardware desenvolvido em verilog
+- montador desenvolvido em C++
+- ligador desenvolvido em C++
+- simulador desenvolvido em C++
+- pseudo-instruções acrescentadas no montador
+- testes de simulação feitos no quartus com um algoritmo de sequência de fibonacci
