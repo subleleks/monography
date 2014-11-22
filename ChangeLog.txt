@@ -3,4 +3,4 @@
 - ligador desenvolvido em C++
 - simulador desenvolvido em C++
 - pseudo-instruções acrescentadas no montador
-- testes de simulação feitos no quartus com um algoritmo de sequência de fibonacci
+- testes de simulação feitos no Quartus com um algoritmo de sequência de Fibonacci
